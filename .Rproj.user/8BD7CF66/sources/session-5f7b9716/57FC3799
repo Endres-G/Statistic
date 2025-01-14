@@ -1,0 +1,28 @@
+{
+    "id": "57FC3799",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1736385956113.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "id": "018d371894884ac0a6ebdcc19b887cb6",
+        "name": "histo_selic",
+        "title": "histo_selic",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7454057966332046965,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1736385956113,
+    "read_only": false,
+    "read_only_alternatives": []
+}

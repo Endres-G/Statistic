@@ -1,0 +1,28 @@
+{
+    "id": "C2843A8C",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1736385952189.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "id": "0fd18c933f0646d6835661669cede91c",
+        "name": "histo_ibov",
+        "title": "histo_ibov",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1462516438840,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1736385952189,
+    "read_only": false,
+    "read_only_alternatives": []
+}
