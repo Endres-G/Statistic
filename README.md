@@ -1,3 +1,29 @@
+
+# Linear Regression Analysis in R: Relationship between Ibovespa and Selic Rate
+
+## Overview
+This project aims to study the relationship between the **Ibovespa index** and the **Selic rate** using **linear regression** techniques implemented in R. The analysis seeks to identify how variations in the Selic rate can impact the main index of the Brazilian stock market, the Ibovespa.
+
+---
+
+## Motivation
+The Ibovespa is widely used as an indicator of stock market performance in Brazil, while the Selic rate plays a crucial role in the country's monetary policy. Understanding this relationship can provide valuable insights into how economic decisions affect the financial market.
+
+---
+
+## Tools and Technologies
+- **Programming Language:** R
+- **Key Libraries:**
+  - `e1071`: For statistical analysis (skewness and kurtosis).
+  - `ggplot2`: For data visualization.
+  - `stats`: For linear regression modeling.
+- **Code Editor:** RStudio or another editor of your choice.
+
+---
+
+
+
+
 # Análise de Regressão Linear em R: Relação entre Ibovespa e Taxa Selic
 
 ## Visão Geral
@@ -19,105 +45,3 @@ O Ibovespa é amplamente utilizado como indicador do desempenho do mercado de a�
 - **Editor de Código:** RStudio ou outro editor de sua preferência.
 
 ---
-
-## Etapas do Projeto
-
-### 1. **Coleta de Dados**
-Os dados históricos do índice Ibovespa e da taxa Selic foram obtidos de fontes confiáveis, como:
-- **Ibovespa:** B3 (Bolsa de Valores do Brasil).
-- **Taxa Selic:** Banco Central do Brasil.
-
-### 2. **Preparação dos Dados**
-- Tratamento de valores ausentes ou inconsistentes.
-- Alinhamento de períodos para garantir comparabilidade entre as séries temporais.
-
-### 3. **Análise Exploratória de Dados (EDA)**
-- Estatísticas descritivas (média, mediana, desvio padrão, assimetria e curtose).
-- Visualizações iniciais, como gráficos de dispersão e histogramas, para identificar padrões.
-
-### 4. **Modelagem de Regressão Linear**
-- Fórmula: `Ibovespa ~ Taxa Selic`
-- Ajuste do modelo utilizando a função `lm()` em R:
-  ```R
-  modelo <- lm(Ibovespa ~ Selic, data = dados)
-  summary(modelo)
-  ```
-- Avaliação do modelo por meio de métricas como **R²** e **p-valores**.
-
-### 5. **Visualização dos Resultados**
-- Gráficos de regressão com `ggplot2`:
-  ```R
-  library(ggplot2)
-  ggplot(dados, aes(x = Selic, y = Ibovespa)) +
-    geom_point() +
-    geom_smooth(method = "lm", col = "blue") +
-    labs(title = "Regressão Linear: Ibovespa vs Taxa Selic",
-         x = "Taxa Selic (%)",
-         y = "Ibovespa")
-  ```
-
-### 6. **Interpretação dos Resultados**
-Análise dos coeficientes estimados e discussão sobre a significância estatística da relação entre as variáveis.
-
----
-
-## Resultados Esperados
-- Compreender se existe uma relação linear significativa entre a taxa Selic e o Ibovespa.
-- Identificar a direção e a magnitude dessa relação (se a taxa Selic aumenta, o Ibovespa tende a subir ou cair).
-
----
-
-## Estrutura do Projeto
-```
-|-- dados/
-|   |-- ibovespa.csv       # Dados históricos do Ibovespa
-|   |-- selic.csv          # Dados históricos da taxa Selic
-|
-|-- scripts/
-|   |-- analise_eda.R      # Análise exploratória de dados
-|   |-- regressao_linear.R # Modelagem de regressão linear
-|
-|-- resultados/
-|   |-- graficos/          # Visualizações geradas
-|   |-- relatorio.pdf      # Relatório final
-|
-|-- README.md              # Documentação do projeto
-```
-
----
-
-## Como Executar
-
-### Pré-requisitos
-Certifique-se de ter o R instalado e as bibliotecas necessárias configuradas:
-```R
-install.packages(c("e1071", "ggplot2"))
-```
-
-### Passos
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/projeto-regressao-ibovespa-selic.git
-   cd projeto-regressao-ibovespa-selic
-   ```
-
-2. Execute o script de análise no R:
-   ```R
-   source("scripts/analise_eda.R")
-   source("scripts/regressao_linear.R")
-   ```
-
-3. Os resultados estarão disponíveis na pasta `resultados/`.
-
----
-
-## Contribuições
-Sinta-se à vontade para abrir issues ou enviar pull requests. Toda ajuda para melhorar a análise é bem-vinda!
-
----
-
-## Contato
-- **Autor:** Gabriel Endres
-- **Email:** gabriel.endres@example.com
-- **GitHub:** [seu-usuario](https://github.com/seu-usuario)
-
